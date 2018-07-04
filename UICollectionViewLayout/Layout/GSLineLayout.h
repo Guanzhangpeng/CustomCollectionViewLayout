@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  GSLineLayout.h
 //  UICollectionViewLayout
 //
 //  Created by 管章鹏 on 2018/7/4.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface GSLineLayout : UICollectionViewFlowLayout
 
 @end
-
