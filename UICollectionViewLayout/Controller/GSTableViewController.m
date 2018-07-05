@@ -9,6 +9,7 @@
 #import "GSTableViewController.h"
 #import "GSWaterFlowVC.h"
 #import "GSCustomLayoutVC.h"
+#import "GSDateVC.h"
 static NSString * const cellID = @"cell";
 @interface GSTableViewController ()
 
@@ -19,13 +20,15 @@ static NSString * const cellID = @"cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"CollectionView的使用";
+    
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellID];
     self.tableView.tableFooterView = [[UIView alloc] init];
     self.tableView.rowHeight = 88;
 }
 #pragma mark - Table view data source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
+    return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -34,8 +37,11 @@ static NSString * const cellID = @"cell";
     if (indexPath.row == 0) {
         cell.textLabel.text = @"流水布局";
     }
-    else{
+    else  if (indexPath.row == 1) {
         cell.textLabel.text = @"自定义布局";
+    }
+    else{
+         cell.textLabel.text = @"日历";
     }
     return cell;
 }
@@ -45,8 +51,11 @@ static NSString * const cellID = @"cell";
         GSWaterFlowVC *vc = [[GSWaterFlowVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
-    else{
+    else  if (indexPath.row == 1){
         GSCustomLayoutVC *vc = [[GSCustomLayoutVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else {
+        GSDateVC *vc = [[GSDateVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

@@ -91,7 +91,7 @@
  */
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    // 假设最短的那一列的第0列
+    // 假设最短的那一列是第0列
     __block NSString *minColumn = @"0";
     // 找出最短的那一列
     [self.maxYDict enumerateKeysAndObjectsUsingBlock:^(NSString *column, NSNumber *maxY, BOOL *stop) {

@@ -15,7 +15,6 @@
 		19F6417B20ECC3B800F1DCDD /* GSLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F6417920ECC3B800F1DCDD /* GSLineLayout.m */; };
 		19F6418320ECC86E00F1DCDD /* GSStackLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F6418220ECC86E00F1DCDD /* GSStackLayout.m */; };
 		19F6418620ECC8AD00F1DCDD /* GSCircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F6418520ECC8AD00F1DCDD /* GSCircleLayout.m */; };
-		19F6418C20ECC97500F1DCDD /* GSShop.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F6418B20ECC97500F1DCDD /* GSShop.m */; };
 		19F6419220ECCA1F00F1DCDD /* GSWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F6419120ECCA1F00F1DCDD /* GSWaterFlowLayout.m */; };
 		19F6419720ECCB3800F1DCDD /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19F6419620ECCB3700F1DCDD /* 1.plist */; };
 		19F641AE20ECD0B800F1DCDD /* GSShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19F641A120ECD0B800F1DCDD /* GSShopCell.xib */; };
@@ -25,6 +24,13 @@
 		19F641B220ECD0B800F1DCDD /* GSWaterFlowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F641A820ECD0B800F1DCDD /* GSWaterFlowVC.m */; };
 		19F641B320ECD0B800F1DCDD /* GSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F641AB20ECD0B800F1DCDD /* GSTableViewController.m */; };
 		19F641B720ECD2BD00F1DCDD /* GSCustomLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F641B620ECD2BD00F1DCDD /* GSCustomLayoutVC.m */; };
+		19F641BB20EDEC5200F1DCDD /* GSShop.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F641BA20EDEC5200F1DCDD /* GSShop.m */; };
+		19F641BE20EDEC8A00F1DCDD /* GSDateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F641BD20EDEC8A00F1DCDD /* GSDateVC.m */; };
+		19F641C220EDEE3900F1DCDD /* GSDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F641C020EDEE3900F1DCDD /* GSDateCell.m */; };
+		19F641C320EDEE3900F1DCDD /* GSDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19F641C120EDEE3900F1DCDD /* GSDateCell.xib */; };
+		19F641C720EDFA8E00F1DCDD /* GSDateHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F641C520EDFA8E00F1DCDD /* GSDateHeaderView.m */; };
+		19F641C820EDFA8E00F1DCDD /* GSDateHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19F641C620EDFA8E00F1DCDD /* GSDateHeaderView.xib */; };
+		19F641CB20EDFE3C00F1DCDD /* GSDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F641CA20EDFE3C00F1DCDD /* GSDate.m */; };
 		7F828F9CC34AE85566D24305 /* libPods-UICollectionViewLayout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC5865529ED497A970E3CF5 /* libPods-UICollectionViewLayout.a */; };
 /* End PBXBuildFile section */
 
@@ -44,8 +50,6 @@
 		19F6418220ECC86E00F1DCDD /* GSStackLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSStackLayout.m; sourceTree = "<group>"; };
 		19F6418420ECC8AD00F1DCDD /* GSCircleLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSCircleLayout.h; sourceTree = "<group>"; };
 		19F6418520ECC8AD00F1DCDD /* GSCircleLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSCircleLayout.m; sourceTree = "<group>"; };
-		19F6418A20ECC97500F1DCDD /* GSShop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSShop.h; sourceTree = "<group>"; };
-		19F6418B20ECC97500F1DCDD /* GSShop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSShop.m; sourceTree = "<group>"; };
 		19F6419020ECCA1F00F1DCDD /* GSWaterFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSWaterFlowLayout.h; sourceTree = "<group>"; };
 		19F6419120ECCA1F00F1DCDD /* GSWaterFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSWaterFlowLayout.m; sourceTree = "<group>"; };
 		19F6419620ECCB3700F1DCDD /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
@@ -61,6 +65,18 @@
 		19F641AC20ECD0B800F1DCDD /* GSWaterFlowVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSWaterFlowVC.h; sourceTree = "<group>"; };
 		19F641B520ECD2BD00F1DCDD /* GSCustomLayoutVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSCustomLayoutVC.h; sourceTree = "<group>"; };
 		19F641B620ECD2BD00F1DCDD /* GSCustomLayoutVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSCustomLayoutVC.m; sourceTree = "<group>"; };
+		19F641B920EDEC5200F1DCDD /* GSShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSShop.h; sourceTree = "<group>"; };
+		19F641BA20EDEC5200F1DCDD /* GSShop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSShop.m; sourceTree = "<group>"; };
+		19F641BC20EDEC8A00F1DCDD /* GSDateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSDateVC.h; sourceTree = "<group>"; };
+		19F641BD20EDEC8A00F1DCDD /* GSDateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSDateVC.m; sourceTree = "<group>"; };
+		19F641BF20EDEE3900F1DCDD /* GSDateCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSDateCell.h; sourceTree = "<group>"; };
+		19F641C020EDEE3900F1DCDD /* GSDateCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSDateCell.m; sourceTree = "<group>"; };
+		19F641C120EDEE3900F1DCDD /* GSDateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GSDateCell.xib; sourceTree = "<group>"; };
+		19F641C420EDFA8E00F1DCDD /* GSDateHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSDateHeaderView.h; sourceTree = "<group>"; };
+		19F641C520EDFA8E00F1DCDD /* GSDateHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSDateHeaderView.m; sourceTree = "<group>"; };
+		19F641C620EDFA8E00F1DCDD /* GSDateHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GSDateHeaderView.xib; sourceTree = "<group>"; };
+		19F641C920EDFE3C00F1DCDD /* GSDate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSDate.h; sourceTree = "<group>"; };
+		19F641CA20EDFE3C00F1DCDD /* GSDate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSDate.m; sourceTree = "<group>"; };
 		2FC5865529ED497A970E3CF5 /* libPods-UICollectionViewLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UICollectionViewLayout.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECFBD5AD2691D38A61AF3CB4 /* Pods-UICollectionViewLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionViewLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UICollectionViewLayout/Pods-UICollectionViewLayout.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +114,7 @@
 		19F6415B20ECC08D00F1DCDD /* UICollectionViewLayout */ = {
 			isa = PBXGroup;
 			children = (
+				19F641B820EDEC5200F1DCDD /* Model */,
 				19F641A720ECD0B800F1DCDD /* Controller */,
 				19F641A020ECD0B800F1DCDD /* View */,
 				19F6417820ECC3B800F1DCDD /* Layout */,
@@ -109,8 +126,6 @@
 				19F6416A20ECC08E00F1DCDD /* Info.plist */,
 				19F6419620ECCB3700F1DCDD /* 1.plist */,
 				19F6416B20ECC08E00F1DCDD /* main.m */,
-				19F6418A20ECC97500F1DCDD /* GSShop.h */,
-				19F6418B20ECC97500F1DCDD /* GSShop.m */,
 			);
 			path = UICollectionViewLayout;
 			sourceTree = "<group>";
@@ -139,6 +154,12 @@
 				19F641A520ECD0B800F1DCDD /* GSShopCell.h */,
 				19F641A320ECD0B800F1DCDD /* GSShopCell.m */,
 				19F641A120ECD0B800F1DCDD /* GSShopCell.xib */,
+				19F641BF20EDEE3900F1DCDD /* GSDateCell.h */,
+				19F641C020EDEE3900F1DCDD /* GSDateCell.m */,
+				19F641C120EDEE3900F1DCDD /* GSDateCell.xib */,
+				19F641C420EDFA8E00F1DCDD /* GSDateHeaderView.h */,
+				19F641C520EDFA8E00F1DCDD /* GSDateHeaderView.m */,
+				19F641C620EDFA8E00F1DCDD /* GSDateHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -152,8 +173,21 @@
 				19F641AB20ECD0B800F1DCDD /* GSTableViewController.m */,
 				19F641B520ECD2BD00F1DCDD /* GSCustomLayoutVC.h */,
 				19F641B620ECD2BD00F1DCDD /* GSCustomLayoutVC.m */,
+				19F641BC20EDEC8A00F1DCDD /* GSDateVC.h */,
+				19F641BD20EDEC8A00F1DCDD /* GSDateVC.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		19F641B820EDEC5200F1DCDD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				19F641B920EDEC5200F1DCDD /* GSShop.h */,
+				19F641BA20EDEC5200F1DCDD /* GSShop.m */,
+				19F641C920EDFE3C00F1DCDD /* GSDate.h */,
+				19F641CA20EDFE3C00F1DCDD /* GSDate.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		38C916DBE012FE89AF724909 /* Frameworks */ = {
@@ -233,7 +267,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				19F6419720ECCB3800F1DCDD /* 1.plist in Resources */,
+				19F641C820EDFA8E00F1DCDD /* GSDateHeaderView.xib in Resources */,
 				19F6416920ECC08E00F1DCDD /* LaunchScreen.storyboard in Resources */,
+				19F641C320EDEE3900F1DCDD /* GSDateCell.xib in Resources */,
 				19F641AE20ECD0B800F1DCDD /* GSShopCell.xib in Resources */,
 				19F641B120ECD0B800F1DCDD /* GSImageCell.xib in Resources */,
 				19F6416620ECC08E00F1DCDD /* Assets.xcassets in Resources */,
@@ -287,16 +323,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19F641C720EDFA8E00F1DCDD /* GSDateHeaderView.m in Sources */,
 				19F6416C20ECC08E00F1DCDD /* main.m in Sources */,
 				19F6415E20ECC08D00F1DCDD /* AppDelegate.m in Sources */,
 				19F641B220ECD0B800F1DCDD /* GSWaterFlowVC.m in Sources */,
+				19F641BB20EDEC5200F1DCDD /* GSShop.m in Sources */,
 				19F6419220ECCA1F00F1DCDD /* GSWaterFlowLayout.m in Sources */,
 				19F6418320ECC86E00F1DCDD /* GSStackLayout.m in Sources */,
 				19F641B020ECD0B800F1DCDD /* GSShopCell.m in Sources */,
+				19F641C220EDEE3900F1DCDD /* GSDateCell.m in Sources */,
 				19F641B320ECD0B800F1DCDD /* GSTableViewController.m in Sources */,
-				19F6418C20ECC97500F1DCDD /* GSShop.m in Sources */,
 				19F641AF20ECD0B800F1DCDD /* GSImageCell.m in Sources */,
+				19F641CB20EDFE3C00F1DCDD /* GSDate.m in Sources */,
 				19F641B720ECD2BD00F1DCDD /* GSCustomLayoutVC.m in Sources */,
+				19F641BE20EDEC8A00F1DCDD /* GSDateVC.m in Sources */,
 				19F6417B20ECC3B800F1DCDD /* GSLineLayout.m in Sources */,
 				19F6418620ECC8AD00F1DCDD /* GSCircleLayout.m in Sources */,
 			);
