@@ -6,5 +6,6 @@ target 'UICollectionViewLayout' do
  pod 'MJExtension'
  pod 'MJRefresh'
  pod 'SDWebImage'
+ pod 'Masonry'
 
 end

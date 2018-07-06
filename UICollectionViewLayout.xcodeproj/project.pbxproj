@@ -31,6 +31,10 @@
 		19F641C720EDFA8E00F1DCDD /* GSDateHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F641C520EDFA8E00F1DCDD /* GSDateHeaderView.m */; };
 		19F641C820EDFA8E00F1DCDD /* GSDateHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19F641C620EDFA8E00F1DCDD /* GSDateHeaderView.xib */; };
 		19F641CB20EDFE3C00F1DCDD /* GSDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F641CA20EDFE3C00F1DCDD /* GSDate.m */; };
+		19F641CE20EE3B4B00F1DCDD /* GSNewsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F641CD20EE3B4B00F1DCDD /* GSNewsVC.m */; };
+		19F641D120EE3C4C00F1DCDD /* GSNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F641D020EE3C4C00F1DCDD /* GSNewsCell.m */; };
+		19F641D320EE3E8F00F1DCDD /* newses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19F641D220EE3E8F00F1DCDD /* newses.plist */; };
+		19F641D620EE3ECB00F1DCDD /* GSNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F641D520EE3ECB00F1DCDD /* GSNews.m */; };
 		7F828F9CC34AE85566D24305 /* libPods-UICollectionViewLayout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC5865529ED497A970E3CF5 /* libPods-UICollectionViewLayout.a */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +81,13 @@
 		19F641C620EDFA8E00F1DCDD /* GSDateHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GSDateHeaderView.xib; sourceTree = "<group>"; };
 		19F641C920EDFE3C00F1DCDD /* GSDate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSDate.h; sourceTree = "<group>"; };
 		19F641CA20EDFE3C00F1DCDD /* GSDate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSDate.m; sourceTree = "<group>"; };
+		19F641CC20EE3B4B00F1DCDD /* GSNewsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSNewsVC.h; sourceTree = "<group>"; };
+		19F641CD20EE3B4B00F1DCDD /* GSNewsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSNewsVC.m; sourceTree = "<group>"; };
+		19F641CF20EE3C4C00F1DCDD /* GSNewsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSNewsCell.h; sourceTree = "<group>"; };
+		19F641D020EE3C4C00F1DCDD /* GSNewsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSNewsCell.m; sourceTree = "<group>"; };
+		19F641D220EE3E8F00F1DCDD /* newses.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = newses.plist; sourceTree = "<group>"; };
+		19F641D420EE3ECB00F1DCDD /* GSNews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSNews.h; sourceTree = "<group>"; };
+		19F641D520EE3ECB00F1DCDD /* GSNews.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSNews.m; sourceTree = "<group>"; };
 		2FC5865529ED497A970E3CF5 /* libPods-UICollectionViewLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UICollectionViewLayout.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECFBD5AD2691D38A61AF3CB4 /* Pods-UICollectionViewLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionViewLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UICollectionViewLayout/Pods-UICollectionViewLayout.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +134,7 @@
 				19F6416220ECC08D00F1DCDD /* Main.storyboard */,
 				19F6416520ECC08E00F1DCDD /* Assets.xcassets */,
 				19F6416720ECC08E00F1DCDD /* LaunchScreen.storyboard */,
+				19F641D220EE3E8F00F1DCDD /* newses.plist */,
 				19F6416A20ECC08E00F1DCDD /* Info.plist */,
 				19F6419620ECCB3700F1DCDD /* 1.plist */,
 				19F6416B20ECC08E00F1DCDD /* main.m */,
@@ -160,6 +172,8 @@
 				19F641C420EDFA8E00F1DCDD /* GSDateHeaderView.h */,
 				19F641C520EDFA8E00F1DCDD /* GSDateHeaderView.m */,
 				19F641C620EDFA8E00F1DCDD /* GSDateHeaderView.xib */,
+				19F641CF20EE3C4C00F1DCDD /* GSNewsCell.h */,
+				19F641D020EE3C4C00F1DCDD /* GSNewsCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,14 +181,16 @@
 		19F641A720ECD0B800F1DCDD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				19F641AC20ECD0B800F1DCDD /* GSWaterFlowVC.h */,
-				19F641A820ECD0B800F1DCDD /* GSWaterFlowVC.m */,
 				19F641A920ECD0B800F1DCDD /* GSTableViewController.h */,
 				19F641AB20ECD0B800F1DCDD /* GSTableViewController.m */,
+				19F641AC20ECD0B800F1DCDD /* GSWaterFlowVC.h */,
+				19F641A820ECD0B800F1DCDD /* GSWaterFlowVC.m */,
 				19F641B520ECD2BD00F1DCDD /* GSCustomLayoutVC.h */,
 				19F641B620ECD2BD00F1DCDD /* GSCustomLayoutVC.m */,
 				19F641BC20EDEC8A00F1DCDD /* GSDateVC.h */,
 				19F641BD20EDEC8A00F1DCDD /* GSDateVC.m */,
+				19F641CC20EE3B4B00F1DCDD /* GSNewsVC.h */,
+				19F641CD20EE3B4B00F1DCDD /* GSNewsVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -186,6 +202,8 @@
 				19F641BA20EDEC5200F1DCDD /* GSShop.m */,
 				19F641C920EDFE3C00F1DCDD /* GSDate.h */,
 				19F641CA20EDFE3C00F1DCDD /* GSDate.m */,
+				19F641D420EE3ECB00F1DCDD /* GSNews.h */,
+				19F641D520EE3ECB00F1DCDD /* GSNews.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -267,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19F6419720ECCB3800F1DCDD /* 1.plist in Resources */,
+				19F641D320EE3E8F00F1DCDD /* newses.plist in Resources */,
 				19F641C820EDFA8E00F1DCDD /* GSDateHeaderView.xib in Resources */,
 				19F6416920ECC08E00F1DCDD /* LaunchScreen.storyboard in Resources */,
 				19F641C320EDEE3900F1DCDD /* GSDateCell.xib in Resources */,
@@ -335,7 +354,10 @@
 				19F641B320ECD0B800F1DCDD /* GSTableViewController.m in Sources */,
 				19F641AF20ECD0B800F1DCDD /* GSImageCell.m in Sources */,
 				19F641CB20EDFE3C00F1DCDD /* GSDate.m in Sources */,
+				19F641D120EE3C4C00F1DCDD /* GSNewsCell.m in Sources */,
+				19F641CE20EE3B4B00F1DCDD /* GSNewsVC.m in Sources */,
 				19F641B720ECD2BD00F1DCDD /* GSCustomLayoutVC.m in Sources */,
+				19F641D620EE3ECB00F1DCDD /* GSNews.m in Sources */,
 				19F641BE20EDEC8A00F1DCDD /* GSDateVC.m in Sources */,
 				19F6417B20ECC3B800F1DCDD /* GSLineLayout.m in Sources */,
 				19F6418620ECC8AD00F1DCDD /* GSCircleLayout.m in Sources */,

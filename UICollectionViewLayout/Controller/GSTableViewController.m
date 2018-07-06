@@ -9,6 +9,7 @@
 #import "GSTableViewController.h"
 #import "GSWaterFlowVC.h"
 #import "GSCustomLayoutVC.h"
+#import "GSNewsVC.h"
 #import "GSDateVC.h"
 static NSString * const cellID = @"cell";
 @interface GSTableViewController ()
@@ -20,7 +21,7 @@ static NSString * const cellID = @"cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"CollectionView的使用";
+    self.title = @"首页";
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellID];
     self.tableView.tableFooterView = [[UIView alloc] init];
@@ -28,34 +29,43 @@ static NSString * const cellID = @"cell";
 }
 #pragma mark - Table view data source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
     
     if (indexPath.row == 0) {
-        cell.textLabel.text = @"流水布局";
+         cell.textLabel.text = @"日历";
     }
-    else  if (indexPath.row == 1) {
+    else if(indexPath.row == 1){
+         cell.textLabel.text = @"无限循环轮播";
+    }
+    else  if (indexPath.row == 2) {
         cell.textLabel.text = @"自定义布局";
     }
-    else{
-         cell.textLabel.text = @"日历";
+    else  if (indexPath.row == 3){
+         cell.textLabel.text = @"流水布局";
     }
     return cell;
 }
 #pragma mark - Table view delegate
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 0) {
-        GSWaterFlowVC *vc = [[GSWaterFlowVC alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
+        GSDateVC *vc = [[GSDateVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];      
     }
     else  if (indexPath.row == 1){
+        GSNewsVC *vc = [[GSNewsVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        
+    }
+    else  if (indexPath.row == 2){
         GSCustomLayoutVC *vc = [[GSCustomLayoutVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
-    }else {
-        GSDateVC *vc = [[GSDateVC alloc] init];
+        
+    }else if(indexPath.row == 3){
+        GSWaterFlowVC *vc = [[GSWaterFlowVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
